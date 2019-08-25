@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.Elements;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -13,7 +14,19 @@ namespace Assets.Scripts
 
         public Spell AddElemet(BaseElement el)
         {
-            if (Elements.Count < 3) Elements.Add(el);
+            if (Elements.Count < 3)
+            {
+                Elements.Add(el);
+                GameObject.Find("player").GetComponent<SpellController>().UpdateSpellGui(this.Elements);
+            }
+
+            return this;
+        }
+
+        public Spell Reset()
+        {
+            this.Elements = new List<BaseElement>();
+            GameObject.Find("player").GetComponent<SpellController>().Clear();
             return this;
         }
         public string FormatComponents() =>

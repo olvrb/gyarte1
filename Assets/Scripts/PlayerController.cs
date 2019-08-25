@@ -12,6 +12,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float rotationSpeed;
 
+    private float ySpellDifference = 1f;
+
+    public Vector3 Slot1 { get => new Vector3(transform.position.x - 0.5f, transform.position.y - ySpellDifference); }
+    public Vector3 Slot2 { get => new Vector3(transform.position.x, transform.position.y - ySpellDifference); }
+    public Vector3 Slot3 { get => new Vector3(transform.position.x + 0.5f, transform.position.y - ySpellDifference); }
+
+
     private Rigidbody2D body;
 
     public Spell Spell;
@@ -39,8 +46,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Alpha2)) this.Spell.AddElemet(new Lightning());
         else if (Input.GetKeyUp(KeyCode.Alpha3)) this.Spell.AddElemet(new Laser());
         else if (Input.GetKeyUp(KeyCode.Alpha4)) this.Spell.AddElemet(new Explosive());
+        else if (Input.GetKeyUp(KeyCode.Space)) this.Spell.Reset();
         GameObject.Find("Canvas").GetComponent<GuiManager>().UpdateSpells(this.Spell.FormatComponents());
-        GetComponent<SpellController>().UpdateSpellGui(this.Spell.Elements);
     }
 
     private void InitSpell()
