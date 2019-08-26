@@ -21,9 +21,17 @@ namespace Assets.Scripts.Elements
         private void Start()
         {
             player = GameObject.Find("player");
+            // Call method as soon as object is created 
+            MoveToPlayer();
         }
+        
 
         private void Update()
+        {
+            MoveToPlayer();
+        }
+
+        private void MoveToPlayer()
         {
             Vector3 slot = new Vector3();
             switch (this.slot)

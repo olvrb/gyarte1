@@ -41,9 +41,6 @@ public class SpellController : MonoBehaviour
 
 
 
-
-        print(els.Count != 0 ? els.Select(i => i.GetType().Name).Aggregate((i, j) => $"{i}, {j}") : "none");
-
         // Element sprite
         GameObject obj = new GameObject();
         obj.AddComponent<ElementController>().SetSlot(els.Count);
