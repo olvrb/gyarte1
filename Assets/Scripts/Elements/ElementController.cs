@@ -11,20 +11,22 @@ namespace Assets.Scripts.Elements
     {
         private GameObject player;
         private int slot;
+        PlayerController playerController;
 
         public void SetSlot(int i)
         {
-            print(i);
             slot = i;
         }
 
         private void Start()
         {
             player = GameObject.Find("player");
+            playerController = player.GetComponent<PlayerController>();
+
             // Call method as soon as object is created 
             MoveToPlayer();
         }
-        
+
 
         private void Update()
         {
@@ -34,16 +36,18 @@ namespace Assets.Scripts.Elements
         private void MoveToPlayer()
         {
             Vector3 slot = new Vector3();
+
+            // Select which slot the element is supposed to sit in.
             switch (this.slot)
             {
                 case 1:
-                    slot = player.GetComponent<PlayerController>().Slot1;
+                    slot = playerController.Slot1;
                     break;
                 case 2:
-                    slot = player.GetComponent<PlayerController>().Slot2;
+                    slot = playerController.Slot2;
                     break;
                 case 3:
-                    slot = player.GetComponent<PlayerController>().Slot3;
+                    slot = playerController.Slot3;
                     break;
                 default:
                     break;

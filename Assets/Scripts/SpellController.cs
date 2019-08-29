@@ -43,6 +43,8 @@ public class SpellController : MonoBehaviour
 
         // Element sprite
         GameObject obj = new GameObject();
+
+        // Add required components
         obj.AddComponent<ElementController>().SetSlot(els.Count);
         var renderer = obj.AddComponent<SpriteRenderer>();
         
