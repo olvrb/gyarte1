@@ -23,6 +23,17 @@ public class PlayerController : MonoBehaviour
 
     public Spell Spell;
 
+    void Awake()
+    {
+        SetRandomSprite();
+    }
+
+    private void SetRandomSprite()
+    {
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Character/PlayerSprites");
+        GetComponent<SpriteRenderer>().sprite = sprites[new System.Random().Next(1, 3)];
+    }
+
     // Start is called before the first frame update
     void Start()
     {

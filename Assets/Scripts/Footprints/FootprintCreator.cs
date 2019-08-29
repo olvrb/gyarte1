@@ -6,19 +6,22 @@ public class FootprintCreator : MonoBehaviour
 {
     [SerializeField]
     private Sprite FootprintSprite;
+    [SerializeField]
+    private uint SpawnFrequency;
     private GameObject Footprints;
     // Start is called before the first frame update
     void Start()
     {
         Footprints = CreateFootprintContainer();
-        print("creating footprint container");
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        System.Random rand = new System.Random();
         // Every fifteenth frame
-        if (Time.frameCount % 15 == 0)
+        if (Time.frameCount % SpawnFrequency + rand.Next(0, 1) == 0)
         {
             GameObject footprint = CreateFootprint();
         }

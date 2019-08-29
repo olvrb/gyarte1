@@ -14,6 +14,7 @@ public class SpellController : MonoBehaviour
     private Sprite Laser;
     [SerializeField]
     private Sprite Explosive;
+
     // Start is called before the first frame update
     void Start()
     {
