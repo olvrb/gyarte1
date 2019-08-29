@@ -377,7 +377,6 @@ GameObject:
   - component: {fileID: 401966038}
   - component: {fileID: 401966039}
   - component: {fileID: 401966040}
-  - component: {fileID: 401966041}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -526,19 +525,6 @@ MonoBehaviour:
   Laser: {fileID: 21300000, guid: e65244f93491dbe43b9539dd1649c970, type: 3}
   Explosive: {fileID: 21300000, guid: f7836a5b019366244a702b860d6fe50d, type: 3}
 --- !u!114 &401966040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401966033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08e81a8a735905e43b9cba5c3c789e55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FootprintSprite: {fileID: 21300000, guid: c3c70dc7aaa539441a48f0d25eb8d242, type: 3}
---- !u!114 &401966041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

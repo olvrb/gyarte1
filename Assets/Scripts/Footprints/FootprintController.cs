@@ -14,7 +14,6 @@ public class FootprintController : MonoBehaviour
     void Update()
     {
         StartCoroutine(FadeTo(0, 1));
-        print("fading out");
     }
 
     // Credit to http://answers.unity.com/comments/1504789/view.html
@@ -27,5 +26,6 @@ public class FootprintController : MonoBehaviour
             transform.GetComponent<SpriteRenderer>().material.color = newColor;
             yield return null;
         }
+        Destroy(this.gameObject);
     }
 }
