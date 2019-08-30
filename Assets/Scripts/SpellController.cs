@@ -15,10 +15,12 @@ public class SpellController : MonoBehaviour
     [SerializeField]
     private Sprite Explosive;
 
+    private GameObject playerSpells;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        playerSpells = CreatePlayerSpells();
     }
 
     // Update is called once per frame
@@ -29,15 +31,17 @@ public class SpellController : MonoBehaviour
 
     public void Clear()
     {
-        foreach (Transform child in GameObject.Find("playerSpells").transform)
+        foreach (Transform child in playerSpells.transform)
         {
             Destroy(child.gameObject);
         }
     }
 
+    // TODO: add a class field with the playerSpells GameObject instead of using Find, which hurts performance.
+
     public void UpdateSpellGui(List<BaseElement> els)
     {
-        GameObject spells = CreatePlayerSpells();
+        GameObject spells = playerSpells;
         GameObject player = GameObject.Find("player");
 
 
@@ -48,7 +52,7 @@ public class SpellController : MonoBehaviour
         // Add required components
         obj.AddComponent<ElementController>().SetSlot(els.Count);
         var renderer = obj.AddComponent<SpriteRenderer>();
-        
+
         switch (els.Last().GetType().Name)
         {
             case "Fire":
@@ -67,16 +71,15 @@ public class SpellController : MonoBehaviour
             default:
                 break;
         }
-        
-        obj.transform.position = new Vector3(0, 0);
+
+        // obj.transform.position = new Vector3(0, 0);
         obj.transform.SetParent(spells.transform);
 
     }
 
     private static GameObject CreatePlayerSpells()
     {
-        GameObject spells = GameObject.Find("playerSpells");
-        if (spells == null) spells = new GameObject();
+        GameObject spells = new GameObject();
         spells.name = "playerSpells";
         return spells;
     }

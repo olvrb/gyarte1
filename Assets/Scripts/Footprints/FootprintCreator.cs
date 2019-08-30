@@ -20,7 +20,7 @@ public class FootprintCreator : MonoBehaviour
     void Update()
     {
         System.Random rand = new System.Random();
-        // Every fifteenth frame
+        // Every ~fifteenth frame
         if (Time.frameCount % SpawnFrequency + rand.Next(0, 1) == 0)
         {
             GameObject footprint = CreateFootprint();
