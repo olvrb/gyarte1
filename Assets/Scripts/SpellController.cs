@@ -37,7 +37,6 @@ public class SpellController : MonoBehaviour
         }
     }
 
-    // TODO: add a class field with the playerSpells GameObject instead of using Find, which hurts performance.
 
     public void UpdateSpellGui(List<BaseElement> els)
     {
