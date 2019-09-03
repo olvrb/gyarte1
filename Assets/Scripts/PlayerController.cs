@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Alpha2)) this.Spell.AddElemet(new Lightning());
         else if (Input.GetKeyUp(KeyCode.Alpha3)) this.Spell.AddElemet(new Laser());
         else if (Input.GetKeyUp(KeyCode.Alpha4)) this.Spell.AddElemet(new Explosive());
-        else if (Input.GetKeyUp(KeyCode.Space)) this.Spell.Reset();
+        else if (Input.GetKeyUp(KeyCode.Space)) this.Spell.Shoot();
         GameObject.Find("Canvas").GetComponent<GuiManager>().UpdateSpells(this.Spell.FormatComponents());
     }
 

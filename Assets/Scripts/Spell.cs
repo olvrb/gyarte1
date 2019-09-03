@@ -23,6 +23,12 @@ namespace Assets.Scripts
             return this;
         }
 
+        public Spell Shoot()
+        {
+            Reset();
+            return this;
+        }
+
         public Spell Reset()
         {
             this.Elements = new List<BaseElement>();

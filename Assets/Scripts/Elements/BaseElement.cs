@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assets.Scripts.Elements
 {
-    public class BaseElement
+    public abstract class BaseElement
     {
+        public abstract string Name { get; set; }
     }
 }

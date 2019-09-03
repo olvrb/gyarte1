@@ -8,5 +8,7 @@ namespace Assets.Scripts.Elements
 {
     class Laser : BaseElement
     {
+        public override string Name { get; set; }
+        public Laser() => Name = "Laser";
     }
 }

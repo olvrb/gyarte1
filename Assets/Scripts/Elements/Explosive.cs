@@ -8,5 +8,7 @@ namespace Assets.Scripts.Elements
 {
     class Explosive : BaseElement
     {
+        public override string Name { get; set; }
+        public Explosive() => Name = "Explosive";
     }
 }

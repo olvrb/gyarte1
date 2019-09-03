@@ -41,7 +41,7 @@ public class SpellController : MonoBehaviour
     public void UpdateSpellGui(List<BaseElement> els)
     {
         GameObject spells = playerSpells;
-        GameObject player = GameObject.Find("player");
+        // GameObject player = GameObject.Find("player");
 
 
 
@@ -51,8 +51,14 @@ public class SpellController : MonoBehaviour
         // Add required components
         obj.AddComponent<ElementController>().SetSlot(els.Count);
         var renderer = obj.AddComponent<SpriteRenderer>();
+        var type = els.Last();
+        if (type is Fire) renderer.sprite = Fire;
+        else if (type is Lightning) renderer.sprite = Lightning;
+        else if (type is Laser) renderer.sprite = Laser;
+        else if (type is Explosive) renderer.sprite = Explosive;
 
-        switch (els.Last().GetType().Name)
+
+        /* switch (els.Last().GetType())
         {
             case "Fire":
                 renderer.sprite = Fire;
@@ -69,7 +75,7 @@ public class SpellController : MonoBehaviour
 
             default:
                 break;
-        }
+        } */
 
         // obj.transform.position = new Vector3(0, 0);
         obj.transform.SetParent(spells.transform);

@@ -8,5 +8,7 @@ namespace Assets.Scripts.Elements
 {
     class Lightning : BaseElement
     {
+        public override string Name { get; set; }
+        public Lightning() => Name = "Lightning";
     }
 }

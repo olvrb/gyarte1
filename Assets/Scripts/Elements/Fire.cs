@@ -8,8 +8,7 @@ namespace Assets.Scripts.Elements
 {
     class Fire : BaseElement
     {
-        public Fire()
-        {
-        }
+        public override string Name { get; set; }
+        public Fire() => Name = "Fire";
     }
 }
