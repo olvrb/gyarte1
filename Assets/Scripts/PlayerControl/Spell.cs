@@ -17,7 +17,9 @@ namespace Assets.Scripts
             if (Elements.Count < 3)
             {
                 Elements.Add(el);
-                GameObject.Find("player").GetComponent<SpellController>().UpdateSpellGui(this.Elements);
+                GameObject player = GameObject.Find("player");
+                player.GetComponent<SpellController>().UpdateSpellGui(this.Elements);
+                player.GetComponent<Telemetry>().SubmitTelemetry(el);
             }
 
             return this;

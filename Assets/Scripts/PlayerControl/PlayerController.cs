@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private void SetRandomSprite()
     {
         Sprite[] sprites = Resources.LoadAll<Sprite>("Character/PlayerSprites");
-        GetComponent<SpriteRenderer>().sprite = sprites[new System.Random().Next(1, 3)];
+        GetComponent<SpriteRenderer>().sprite = sprites[new System.Random().Next(1, sprites.Length)];
     }
 
     // Start is called before the first frame update
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Alpha3)) this.Spell.AddElemet(new Laser());
         else if (Input.GetKeyUp(KeyCode.Alpha4)) this.Spell.AddElemet(new Explosive());
         else if (Input.GetKeyUp(KeyCode.Space)) this.Spell.Shoot();
-        GameObject.Find("Canvas").GetComponent<GuiManager>().UpdateSpells(this.Spell.FormatComponents());
+        GameObject.Find("Canvas").GetComponent<HudManager>().UpdateSpells(this.Spell.FormatComponents());
     }
 
     private void InitSpell()

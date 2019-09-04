@@ -9,7 +9,13 @@ namespace Assets.Scripts.Elements
 {
     class ElementController : MonoBehaviour
     {
+        /// <summary>
+        /// The object the element will be attached to.
+        /// </summary>
         private GameObject player;
+        /// <summary>
+        /// Which slot the Element will sit in.
+        /// </summary>
         private int slot;
         PlayerController playerController;
 

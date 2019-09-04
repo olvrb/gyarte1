@@ -20,13 +20,14 @@ public class FootprintCreator : MonoBehaviour
     void Update()
     {
         System.Random rand = new System.Random();
-        // Every ~fifteenth frame
+        // Every ~n frame
         if (Time.frameCount % SpawnFrequency + rand.Next(0, 1) == 0)
         {
             GameObject footprint = CreateFootprint();
         }
     }
 
+    // We use an empty GameObject container to avoid clogging up the editor.
     private GameObject CreateFootprintContainer()
     {
         GameObject footprints = new GameObject();
@@ -44,7 +45,7 @@ public class FootprintCreator : MonoBehaviour
         footprint.transform.position = transform.position;
         footprint.transform.rotation = transform.rotation;
 
-        // Contain all footprints 
+        /// Contain all footprints, <see cref="CreateFootprintContainer"/>
         footprint.transform.SetParent(Footprints.transform);
         return footprint;
     }

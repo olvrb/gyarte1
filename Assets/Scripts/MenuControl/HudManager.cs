@@ -9,7 +9,7 @@ using UnityEngine.UI;
 namespace Assets.Scripts
 {
 
-    class GuiManager : MonoBehaviour
+    class HudManager : MonoBehaviour
     {
         [SerializeField]
         private GameObject CurrentSpell;
