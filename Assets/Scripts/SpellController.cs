@@ -57,29 +57,7 @@ public class SpellController : MonoBehaviour
         else if (type is Laser) renderer.sprite = Laser;
         else if (type is Explosive) renderer.sprite = Explosive;
 
-
-        /* switch (els.Last().GetType())
-        {
-            case "Fire":
-                renderer.sprite = Fire;
-                break;
-            case "Lightning":
-                renderer.sprite = Lightning;
-                break;
-            case "Laser":
-                renderer.sprite = Laser;
-                break;
-            case "Explosive":
-                renderer.sprite = Explosive;
-                break;
-
-            default:
-                break;
-        } */
-
-        // obj.transform.position = new Vector3(0, 0);
         obj.transform.SetParent(spells.transform);
-
     }
 
     private static GameObject CreatePlayerSpells()
