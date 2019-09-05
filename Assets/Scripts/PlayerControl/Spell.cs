@@ -20,6 +20,10 @@ namespace Assets.Scripts
                 GameObject player = GameObject.Find("player");
                 player.GetComponent<SpellController>().UpdateSpellGui(this.Elements);
                 player.GetComponent<Telemetry>().SubmitTelemetry(el);
+
+                AudioSource audioSource = player.GetComponent<AudioSource>();
+                audioSource.clip = el.SoundEffect;
+                audioSource.Play();
             }
 
             return this;

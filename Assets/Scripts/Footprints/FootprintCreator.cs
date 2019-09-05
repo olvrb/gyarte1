@@ -19,9 +19,8 @@ public class FootprintCreator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        System.Random rand = new System.Random();
         // Every ~n frame
-        if (Time.frameCount % SpawnFrequency + rand.Next(0, 1) == 0)
+        if (Time.frameCount % SpawnFrequency + Random.Range(-1, 1) == 0)
         {
             GameObject footprint = CreateFootprint();
         }
@@ -31,7 +30,7 @@ public class FootprintCreator : MonoBehaviour
     private GameObject CreateFootprintContainer()
     {
         GameObject footprints = new GameObject();
-        footprints.name = "footprints";
+        footprints.name = "footprints"; 
         return footprints;
     }
 

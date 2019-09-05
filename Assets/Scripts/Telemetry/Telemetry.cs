@@ -28,6 +28,7 @@ public class Telemetry : MonoBehaviour
 
     void OnApplicationQuit()
     {
+        if (els.Count <= 0) return;
         // Format a string to be written in the TelemetryData folder.
         string s = els.Select(x => x.Name).Aggregate((x, y) => $"{x}, {y}");
         StreamWriter writer = new StreamWriter(File.Open($@"{Application.dataPath}\\..\\TelemetryData\\{DateTime.Now.ToString("MM-dd-yyyy-HH-mm-ss")}.txt",
