@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FootprintCreator : MonoBehaviour
 {
-    [SerializeField]
     private Sprite FootprintSprite;
     [SerializeField]
     private uint SpawnFrequency;
@@ -13,14 +12,21 @@ public class FootprintCreator : MonoBehaviour
     void Start()
     {
         Footprints = CreateFootprintContainer();
-
+        SetRandomFootprintSprite();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SetRandomFootprintSprite()
+    {
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Character/FootprintSprites");
+        FootprintSprite = sprites[new System.Random().Next(0, sprites.Length)];
+    }
+
+    // FixedUpdate is called once per frame, without the need for Time.deltaTime,
+    // because our modulo operation doesn't work well with floats.
+    void FixedUpdate()
     {
         // Every ~n frame
-        if (Time.frameCount % SpawnFrequency + Random.Range(-1, 1) == 0)
+        if (Time.frameCount % SpawnFrequency == 0)
         {
             GameObject footprint = CreateFootprint();
         }
