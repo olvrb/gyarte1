@@ -1,0 +1,1267 @@
+fileFormatVersion: 2
+guid: 459d3304331751b40ad627dfffe95807
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2832758654023047283
+    second: spellhitbox_0
+  - first:
+      213: -3716962586661911594
+    second: spellhitbox_1
+  - first:
+      213: -7607158151690287685
+    second: spellhitbox_2
+  - first:
+      213: 5106542400426266138
+    second: spellhitbox_3
+  - first:
+      213: 2322792501359584760
+    second: spellhitbox_4
+  - first:
+      213: 2933717744436040432
+    second: spellhitbox_5
+  - first:
+      213: -4356511387460161974
+    second: spellhitbox_6
+  - first:
+      213: 6165607755003627589
+    second: spellhitbox_7
+  - first:
+      213: -5841833504106958862
+    second: spellhitbox_8
+  - first:
+      213: 7079124907218832832
+    second: spellhitbox_9
+  - first:
+      213: -968308024091730073
+    second: spellhitbox_10
+  - first:
+      213: -6703820887473526518
+    second: spellhitbox_11
+  - first:
+      213: 7785669964323371909
+    second: spellhitbox_12
+  - first:
+      213: -1128549790560581049
+    second: spellhitbox_13
+  - first:
+      213: -2601525918814570212
+    second: spellhitbox_14
+  - first:
+      213: -3738923493320887123
+    second: spellhitbox_15
+  - first:
+      213: 5065823033651083427
+    second: spellhitbox_16
+  - first:
+      213: 1427414075949031956
+    second: spellhitbox_17
+  - first:
+      213: -7681067697355308533
+    second: spellhitbox_18
+  - first:
+      213: 2569537544471417680
+    second: spellhitbox_19
+  - first:
+      213: 3369547320671123903
+    second: spellhitbox_20
+  - first:
+      213: -6852966449124756623
+    second: spellhitbox_21
+  - first:
+      213: -1530356619656022336
+    second: spellhitbox_22
+  - first:
+      213: 9194152923517660646
+    second: spellhitbox_23
+  - first:
+      213: -6611756118237916681
+    second: spellhitbox_24
+  - first:
+      213: 2505933429698885258
+    second: spellhitbox_25
+  - first:
+      213: -4836270822345314500
+    second: spellhitbox_26
+  - first:
+      213: 4199192232889162133
+    second: spellhitbox_27
+  - first:
+      213: 2695663369041975315
+    second: spellhitbox_28
+  - first:
+      213: -2147621654339224746
+    second: spellhitbox_29
+  - first:
+      213: 8500329750102313473
+    second: spellhitbox_30
+  - first:
+      213: -7153911909804146680
+    second: spellhitbox_31
+  - first:
+      213: -2580470412238044329
+    second: spellhitbox_32
+  - first:
+      213: 5940960654412553709
+    second: spellhitbox_33
+  - first:
+      213: -7064520899796361463
+    second: spellhitbox_34
+  - first:
+      213: 9026826598691576465
+    second: spellhitbox_35
+  - first:
+      213: 2822393488387408590
+    second: spellhitbox_36
+  - first:
+      213: 8857603206480240045
+    second: spellhitbox_37
+  - first:
+      213: 2914285240259489769
+    second: spellhitbox_38
+  - first:
+      213: -1856349361245902186
+    second: spellhitbox_39
+  - first:
+      213: 8862610818371622361
+    second: spellhitbox_40
+  - first:
+      213: -5441052593186309116
+    second: spellhitbox_41
+  - first:
+      213: 7620447366427197315
+    second: spellhitbox_42
+  - first:
+      213: -8311899707293350282
+    second: spellhitbox_43
+  - first:
+      213: -644373785351368566
+    second: spellhitbox_44
+  - first:
+      213: 5089114050037072217
+    second: spellhitbox_45
+  - first:
+      213: 3321418279219269166
+    second: spellhitbox_46
+  - first:
+      213: 2903702745534854338
+    second: spellhitbox_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spellhitbox_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1827
+        width: 1726
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b38a79429e70f4486e1d6416ecf5c3
+      internalID: 2832758654023047283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1692
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2b2440189397544b2f35def7884c35
+      internalID: -3716962586661911594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1032
+        width: 1190
+        height: 741
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1540e57d6f18df4f94ab9fe12d7cd96
+      internalID: -7607158151690287685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_3
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1598
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd38b8ab4c1de884597e21e34414ec39
+      internalID: 5106542400426266138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_4
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1600
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641445e3900a6a344af1bdea012ea355
+      internalID: 2322792501359584760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_5
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1600
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451c00a32bbbe844fbbfc93cd1428044
+      internalID: 2933717744436040432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_6
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1598
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6f1778e40d51f40ba94d75e9ecc1b6
+      internalID: -4356511387460161974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_7
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1421
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7f8359c72c83c4a843da50790b850f
+      internalID: 6165607755003627589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_8
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 1421
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f973a2ac195c4144ca7341b48ec01273
+      internalID: -5841833504106958862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_9
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1421
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4699edbc4a22a93489678a53db7d41cc
+      internalID: 7079124907218832832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_10
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1375
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6862e24375b480543a5c990bd26a71a3
+      internalID: -968308024091730073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_11
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1375
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a19fa311534f474b8b0373a0ae28a30
+      internalID: -6703820887473526518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_12
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 1375
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07285ca42f163e4d8a23e1879d723d2
+      internalID: 7785669964323371909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_13
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1375
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c00d76afee629c4bad2f80e3f05c6af
+      internalID: -1128549790560581049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_14
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1375
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e612e5225e637b44b1716c9248bb132
+      internalID: -2601525918814570212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_15
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1389
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d947747fb91e844b5f0268a3686b96
+      internalID: -3738923493320887123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_16
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1375
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db829768a882d746931652896b9fea3
+      internalID: 5065823033651083427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_17
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 1375
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3140958c2bf604f8fe54d522fe8002
+      internalID: 1427414075949031956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_18
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1370
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480fe6886f8c24441bcd47a0670a114a
+      internalID: -7681067697355308533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_19
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1375
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833db11513522d84daae1b975c727084
+      internalID: 2569537544471417680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_20
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 1370
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb07a9b244ac5174183283895d84bc3d
+      internalID: 3369547320671123903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_21
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1370
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22614ccc7c2c80d469a13f8b6bbc6f17
+      internalID: -6852966449124756623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_22
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1375
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001cf5697b9f9f546a2997a65f83b96c
+      internalID: -1530356619656022336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_23
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1375
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3e193a80de323418ca8f51b98b00d1
+      internalID: 9194152923517660646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_24
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 1375
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e839c1fb51d6049bbf507f59e8331a
+      internalID: -6611756118237916681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_25
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1375
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413b6428e2a6b3c46917fedd8999d8e3
+      internalID: 2505933429698885258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_26
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 863
+        width: 169
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c32cf110f075c94186efcedaaf95281
+      internalID: -4836270822345314500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_27
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9487bce6dc30d6468cf45f66d549af2
+      internalID: 4199192232889162133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_28
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 900
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7324fc1f19a5a214080172fd59fbdaa4
+      internalID: 2695663369041975315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_29
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 902
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d05c7f1d73134c43acfa74f2a5842a6
+      internalID: -2147621654339224746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_30
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 902
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049953f5da95b844f923dcaeaf26ef5a
+      internalID: 8500329750102313473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_31
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 902
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0ea85b3409874409366f17136e1c69
+      internalID: -7153911909804146680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_32
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 902
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256ae015d3750df498b9921fbea71711
+      internalID: -2580470412238044329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_33
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 902
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62398cdc32ebacb408ea0ddbffd8a73d
+      internalID: 5940960654412553709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_34
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995139bdbfb312b4696302c4fc777920
+      internalID: -7064520899796361463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_35
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8dc14fa580e894d80284b906018313
+      internalID: 9026826598691576465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_36
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e29782ec64d50f49a506d11ccbb22f7
+      internalID: 2822393488387408590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_37
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7e32398e820b44094177b45e368bd4
+      internalID: 8857603206480240045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_38
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 900
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21520fb5aab027c4097367291858d8c1
+      internalID: 2914285240259489769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_39
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 657
+        width: 509
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4247543f5853ea94ba95824dea472b9f
+      internalID: -1856349361245902186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_40
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 468
+        width: 598
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ba5588cf258394196ef881e4343b4e
+      internalID: 8862610818371622361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_41
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 454
+        width: 559
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5949369163afa468c17b1c6212e31e
+      internalID: -5441052593186309116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 223
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb5a0baf334b746a82e30e3913c81e
+      internalID: 7620447366427197315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_43
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 223
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc5412d4dd8cd44b9fad6e9525d4553
+      internalID: -8311899707293350282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_44
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 421
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca7ca4d657b742459d12fed4b2abda3
+      internalID: -644373785351368566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 526
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188d8237eebe5a14d91e0096e668390b
+      internalID: 5089114050037072217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_46
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 163
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d1bb98baa92e443801f07ce6915a71
+      internalID: 3321418279219269166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spellhitbox_47
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 163
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbabbc82fab7c254cb212b771b6e732c
+      internalID: 2903702745534854338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

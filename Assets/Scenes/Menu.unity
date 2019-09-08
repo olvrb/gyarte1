@@ -366,7 +366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Title
+  m_Text: "Wizard\u2122\uFE0F.\n"
 --- !u!222 &960267431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268157110}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: adf2bb50f7b95ea488d262d3dfa0e527, type: 3}
