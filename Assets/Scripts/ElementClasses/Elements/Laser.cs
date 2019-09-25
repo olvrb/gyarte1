@@ -11,6 +11,8 @@ namespace Assets.Scripts.Elements
     {
         public override string Name { get; set; }
         public override AudioClip SoundEffect { get; set; }
+        public override Sprite CastSprite { get; set; }
+
         public Laser() => Name = "Laser";
     }
 }

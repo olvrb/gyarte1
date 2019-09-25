@@ -5,11 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.Elements;
 using UnityEngine;
+using UnityEngine.U2D;
+using Assets.Scripts.SpellCast;
 
 namespace Assets.Scripts
 {
     public class Spell
     {
+        public Spell()
+        {
+            player = GameObject.Find("player");
+        }
+        private GameObject player;
         public List<BaseElement> Elements = new List<BaseElement>();
 
         public Spell AddElemet(BaseElement el)
@@ -17,7 +24,6 @@ namespace Assets.Scripts
             if (Elements.Count < 3)
             {
                 Elements.Add(el);
-                GameObject player = GameObject.Find("player");
                 player.GetComponent<SpellController>().UpdateSpellGui(this.Elements);
                 player.GetComponent<Telemetry>().SubmitTelemetry(el);
 
@@ -29,22 +35,48 @@ namespace Assets.Scripts
             return this;
         }
 
-        public Spell Shoot()
+        public Spell Shoot(SpriteAtlas spriteAtlas)
         {
+            if (!IsReadyToFire) return this;
+            GameObject obj = GenerateSpellObject(spriteAtlas);
             Reset();
             return this;
+        }
+
+        public GameObject GenerateSpellObject(SpriteAtlas spriteAtlas)
+        {
+            GameObject obj = new GameObject();
+
+            obj = SetShapeSprite(obj, spriteAtlas);
+
+            SpellCastController cont =  obj.AddComponent<SpellCastController>();
+            cont.SetPlayer(player);
+
+            return obj;
+        }
+
+        public GameObject SetShapeSprite(GameObject obj, SpriteAtlas spriteAtlas)
+        {
+            SpriteRenderer renderer = obj.AddComponent<SpriteRenderer>();
+            if (this.Shape is Fire) renderer.sprite = spriteAtlas.GetSprite("spellhitbox_45");
+            else if (this.Shape is Lightning) spriteAtlas.GetSprite("spellhitbox_45");
+            else if (this.Shape is Laser) spriteAtlas.GetSprite("spellhitbox_45");
+            else if (this.Shape is Explosive) spriteAtlas.GetSprite("spellhitbox_45");
+            return obj;
         }
 
         public Spell Reset()
         {
             this.Elements = new List<BaseElement>();
-            GameObject.Find("player").GetComponent<SpellController>().Clear();
+            player.GetComponent<SpellController>().Clear();
             return this;
         }
         public string FormatComponents() =>
             this.Elements == null || this.Elements.Count == 0 ?
             "none" :
             this.Elements.Select(x => x.GetType().Name).Aggregate((i, j) => $"{i}, {j}");
+
+        public bool IsReadyToFire { get => this.Elements.Count > 0; }
         public BaseElement Shape {
             get => Elements[0];
             private set => Elements[0] = value;

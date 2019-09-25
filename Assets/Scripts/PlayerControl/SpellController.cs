@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Elements;
 using System.Linq;
+using UnityEngine.U2D;
 
 public class SpellController : MonoBehaviour
 {
@@ -15,18 +16,30 @@ public class SpellController : MonoBehaviour
     [SerializeField]
     private Sprite Explosive;
 
+    private SpriteAtlas spriteAtlas;
+
+    private PlayerController playerController;
+
     private GameObject playerSpells;
 
     // Start is called before the first frame update
     void Start()
     {
         playerSpells = CreatePlayerSpells();
+        playerController = GetComponent<PlayerController>();
+        spriteAtlas = Resources.Load<SpriteAtlas>("Character/Spells/SpellHitbox");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.Space)) this.Shoot();
 
+    }
+
+    void Shoot()
+    {
+        this.playerController.Spell.Shoot(spriteAtlas);
     }
 
     public void Clear()

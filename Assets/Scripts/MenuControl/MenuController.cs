@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject PlayButton;
+    [SerializeField]
+    private GameObject OptionsButton;
+    [SerializeField]
+    private GameObject ExitButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,5 +28,10 @@ public class MenuController : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("MainGame");
+    }
+
+    public void OnHover()
+    {
+
     }
 }

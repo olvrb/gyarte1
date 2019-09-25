@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 Slot2 { get => new Vector3(transform.position.x, transform.position.y - ySpellDifference); }
     public Vector3 Slot3 { get => new Vector3(transform.position.x + 0.5f, transform.position.y - ySpellDifference); }
 
+    public Vector3 SpellSlot { get => new Vector3(transform.position.x, transform.position.y) + transform.forward * 100; }
+
 
     private Rigidbody2D body;
 
@@ -57,7 +59,6 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Alpha2)) this.Spell.AddElemet(new Lightning());
         else if (Input.GetKeyUp(KeyCode.Alpha3)) this.Spell.AddElemet(new Laser());
         else if (Input.GetKeyUp(KeyCode.Alpha4)) this.Spell.AddElemet(new Explosive());
-        else if (Input.GetKeyUp(KeyCode.Space)) this.Spell.Shoot();
         GameObject.Find("Canvas").GetComponent<HudManager>().UpdateSpells(this.Spell.FormatComponents());
     }
 
