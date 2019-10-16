@@ -155,10 +155,10 @@ TextureImporter:
       name: ui2_2
       rect:
         serializedVersion: 2
-        x: 1354
+        x: 1350
         y: 0
-        width: 1334
-        height: 319
+        width: 1338
+        height: 314
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
