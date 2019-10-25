@@ -1,61 +1,52 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Assets.Scripts.Elements;
+﻿using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts.Elements;
+using UnityEngine;
 using UnityEngine.U2D;
 
-public class SpellController : MonoBehaviour
-{
-    [SerializeField]
-    private Sprite Fire;
-    [SerializeField]
-    private Sprite Lightning;
-    [SerializeField]
-    private Sprite Laser;
-    [SerializeField]
-    private Sprite Explosive;
+public class SpellController : MonoBehaviour {
+    [SerializeField] private Sprite Explosive;
 
-    private SpriteAtlas spriteAtlas;
+    [SerializeField] private Sprite Fire;
+
+    [SerializeField] private Sprite Laser;
+
+    [SerializeField] private Sprite Lightning;
 
     private PlayerController playerController;
 
     private GameObject playerSpells;
 
+    private SpriteAtlas spriteAtlas;
+
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Start() {
         playerSpells = CreatePlayerSpells();
         playerController = GetComponent<PlayerController>();
         spriteAtlas = Resources.Load<SpriteAtlas>("Character/Spells/SpellHitbox");
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.Space)) this.Shoot();
-
+    private void Update() {
+        if (Input.GetKeyUp(KeyCode.Space)) {
+            Shoot();
+        }
     }
 
-    void Shoot()
-    {
-        this.playerController.Spell.Shoot(spriteAtlas);
+    private void Shoot() {
+        playerController.Spell.Shoot(spriteAtlas);
     }
 
-    public void Clear()
-    {
-        foreach (Transform child in playerSpells.transform)
-        {
+    public void Clear() {
+        foreach (Transform child in playerSpells.transform) {
             Destroy(child.gameObject);
         }
     }
 
 
-    public void UpdateSpellGui(List<BaseElement> els)
-    {
+    public void UpdateSpellGui(List<BaseElement> els) {
         GameObject spells = playerSpells;
         // GameObject player = GameObject.Find("player");
-
 
 
         // Element sprite
@@ -63,18 +54,25 @@ public class SpellController : MonoBehaviour
 
         // Add required components
         obj.AddComponent<ElementController>().SetSlot(els.Count);
-        var renderer = obj.AddComponent<SpriteRenderer>();
-        var type = els.Last();
-        if (type is Fire) renderer.sprite = Fire;
-        else if (type is Lightning) renderer.sprite = Lightning;
-        else if (type is Laser) renderer.sprite = Laser;
-        else if (type is Explosive) renderer.sprite = Explosive;
+        SpriteRenderer renderer = obj.AddComponent<SpriteRenderer>();
+        BaseElement type = els.Last();
+        if (type is Fire) {
+            renderer.sprite = Fire;
+        }
+        else if (type is Lightning) {
+            renderer.sprite = Lightning;
+        }
+        else if (type is Laser) {
+            renderer.sprite = Laser;
+        }
+        else if (type is Explosive) {
+            renderer.sprite = Explosive;
+        }
 
         obj.transform.SetParent(spells.transform);
     }
 
-    private static GameObject CreatePlayerSpells()
-    {
+    private static GameObject CreatePlayerSpells() {
         GameObject spells = new GameObject();
         spells.name = "playerSpells";
         return spells;

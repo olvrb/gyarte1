@@ -1,47 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Random = System.Random;
 
-public class FootprintCreator : MonoBehaviour
-{
-    private Sprite FootprintSprite;
-    [SerializeField]
-    private uint SpawnFrequency;
+public class FootprintCreator : MonoBehaviour {
     private GameObject Footprints;
+    private Sprite FootprintSprite;
+
+    [SerializeField] private uint SpawnFrequency;
+
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Start() {
         Footprints = CreateFootprintContainer();
         SetRandomFootprintSprite();
     }
 
-    private void SetRandomFootprintSprite()
-    {
+    private void SetRandomFootprintSprite() {
         Sprite[] sprites = Resources.LoadAll<Sprite>("Character/FootprintSprites");
-        FootprintSprite = sprites[new System.Random().Next(0, sprites.Length)];
+        FootprintSprite = sprites[new Random().Next(0, sprites.Length)];
     }
 
     // FixedUpdate is called once per frame, without the need for Time.deltaTime,
     // because our modulo operation doesn't work well with floats.
-    void FixedUpdate()
-    {
+    private void FixedUpdate() {
         // Every ~n frame
-        if (Time.frameCount % SpawnFrequency == 0)
-        {
+        if (Time.frameCount % SpawnFrequency == 0) {
             GameObject footprint = CreateFootprint();
         }
     }
 
     // We use an empty GameObject container to avoid clogging up the editor.
-    private GameObject CreateFootprintContainer()
-    {
+    private GameObject CreateFootprintContainer() {
         GameObject footprints = new GameObject();
-        footprints.name = "footprints"; 
+        footprints.name = "footprints";
         return footprints;
     }
 
-    private GameObject CreateFootprint()
-    {
+    private GameObject CreateFootprint() {
         GameObject footprint = new GameObject();
         footprint.AddComponent<SpriteRenderer>().sprite = FootprintSprite;
         footprint.AddComponent<FootprintController>();

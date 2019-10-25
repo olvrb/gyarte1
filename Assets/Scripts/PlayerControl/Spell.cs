@@ -1,30 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Assets.Scripts.Elements;
+using Assets.Scripts.SpellCast;
 using UnityEngine;
 using UnityEngine.U2D;
-using Assets.Scripts.SpellCast;
 
-namespace Assets.Scripts
-{
-    public class Spell
-    {
-        public Spell()
-        {
-            player = GameObject.Find("player");
-        }
-        private GameObject player;
+namespace Assets.Scripts {
+    public class Spell {
         public List<BaseElement> Elements = new List<BaseElement>();
+        private readonly GameObject player;
 
-        public Spell AddElemet(BaseElement el)
-        {
-            if (Elements.Count < 3)
-            {
+        public Spell() => player = GameObject.Find("player");
+
+        public bool IsReadyToFire => Elements.Count > 0;
+
+        public BaseElement Shape {
+            get => Elements[0];
+            private set => Elements[0] = value;
+        }
+
+        public BaseElement Type {
+            get => Elements[1];
+            private set => Elements[1] = value;
+        }
+
+        public BaseElement Effect {
+            get => Elements[2];
+            private set => Elements[2] = value;
+        }
+
+        public Spell AddElemet(BaseElement el) {
+            if (Elements.Count < 3) {
                 Elements.Add(el);
-                player.GetComponent<SpellController>().UpdateSpellGui(this.Elements);
+                player.GetComponent<SpellController>().UpdateSpellGui(Elements);
                 player.GetComponent<Telemetry>().SubmitTelemetry(el);
 
                 AudioSource audioSource = player.GetComponent<AudioSource>();
@@ -35,9 +43,11 @@ namespace Assets.Scripts
             return this;
         }
 
-        public Spell Shoot(SpriteAtlas spriteAtlas)
-        {
-            if (!IsReadyToFire) return this;
+        public Spell Shoot(SpriteAtlas spriteAtlas) {
+            if (!IsReadyToFire) {
+                return this;
+            }
+
             GameObject obj = GenerateSpellObject(spriteAtlas);
             Reset();
             return this;
@@ -49,71 +59,54 @@ namespace Assets.Scripts
 
             obj = SetShapeSprite(obj, spriteAtlas);
 
-            SpellCastController cont =  obj.AddComponent<SpellCastController>();
+            SpellCastController cont = obj.AddComponent<SpellCastController>();
             cont.SetPlayer(player);
 
             return obj;
         }
 
-        public GameObject SetShapeSprite(GameObject obj, SpriteAtlas spriteAtlas)
-        {
+        public GameObject SetShapeSprite(GameObject obj, SpriteAtlas spriteAtlas) {
             SpriteRenderer renderer = obj.AddComponent<SpriteRenderer>();
-            if (this.Shape is Fire) renderer.sprite = spriteAtlas.GetSprite("spellhitbox_45");
-            else if (this.Shape is Lightning) spriteAtlas.GetSprite("spellhitbox_45");
-            else if (this.Shape is Laser) spriteAtlas.GetSprite("spellhitbox_45");
-            else if (this.Shape is Explosive) spriteAtlas.GetSprite("spellhitbox_45");
+            if (Shape is Fire) {
+                renderer.sprite = spriteAtlas.GetSprite("spellhitbox_45");
+            }
+            else if (Shape is Lightning) {
+                spriteAtlas.GetSprite("spellhitbox_45");
+            }
+            else if (Shape is Laser) {
+                spriteAtlas.GetSprite("spellhitbox_45");
+            }
+            else if (Shape is Explosive) {
+                spriteAtlas.GetSprite("spellhitbox_45");
+            }
+
             return obj;
         }
 
-        public Spell Reset()
-        {
-            this.Elements = new List<BaseElement>();
+        public Spell Reset() {
+            Elements = new List<BaseElement>();
             player.GetComponent<SpellController>().Clear();
             return this;
         }
+
         public string FormatComponents() =>
-            this.Elements == null || this.Elements.Count == 0 ?
-            "none" :
-            this.Elements.Select(x => x.GetType().Name).Aggregate((i, j) => $"{i}, {j}");
+            Elements == null || Elements.Count == 0
+                ? "none"
+                : Elements.Select(x => x.GetType().Name).Aggregate((i, j) => $"{i}, {j}");
 
-        public bool IsReadyToFire { get => this.Elements.Count > 0; }
-        public BaseElement Shape {
-            get => Elements[0];
-            private set => Elements[0] = value;
-        }
-        public BaseElement Type {
-            get {
-                return Elements[1];
-            }
-            private set {
-                Elements[1] = value;
-            }
-        }
-        public BaseElement Effect {
-            get {
-                return Elements[2];
-            }
-            private set {
-                Elements[2] = value;
-            }
-        }
-
-        public Spell SetShape(BaseElement el)
-        {
-            this.Shape = el;
+        public Spell SetShape(BaseElement el) {
+            Shape = el;
             return this;
         }
 
-        public Spell SetType(BaseElement el)
-        {
-            this.Type = el;
-            return this;
-        }
-        public Spell SetEffect(BaseElement el)
-        {
-            this.Effect = el;
+        public Spell SetType(BaseElement el) {
+            Type = el;
             return this;
         }
 
+        public Spell SetEffect(BaseElement el) {
+            Effect = el;
+            return this;
+        }
     }
 }

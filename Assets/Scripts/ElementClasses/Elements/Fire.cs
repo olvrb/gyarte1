@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Elements
-{
-    class Fire : BaseElement
-    {
-        public override string Name { get; set; }
-        public override AudioClip SoundEffect { get; set; }
-        
-        public override Sprite CastSprite { get; set; }
-        public Fire()
-        {
+namespace Assets.Scripts.Elements {
+    internal class Fire : BaseElement {
+        public Fire() {
             Name = "Fire";
             SoundEffect = Resources.Load<AudioClip>("Character/Spells/Audio/fire");
         }
+
+        public override string Name { get; set; }
+        public override AudioClip SoundEffect { get; set; }
+
+        public override Sprite CastSprite { get; set; }
     }
 }

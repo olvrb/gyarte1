@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Elements
-{
-    class Explosive : BaseElement
-    {
+namespace Assets.Scripts.Elements {
+    internal class Explosive : BaseElement {
+        public Explosive() => Name = "Explosive";
         public override string Name { get; set; }
         public override AudioClip SoundEffect { get; set; }
         public override Sprite CastSprite { get; set; }
-
-        public Explosive() => Name = "Explosive";
     }
 }

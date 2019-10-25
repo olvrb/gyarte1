@@ -1,21 +1,16 @@
 ﻿using UnityEngine;
 
 namespace Assets.Scripts.SpellCast {
-    public class SpellCollider : MonoBehaviour
-    {
+    public class SpellCollider : MonoBehaviour {
         // Start is called before the first frame update
-        void Start()
-        {
-        
+        private void Start() {
         }
 
         // Update is called once per frame
-        void Update()
-        {
-        
+        private void Update() {
         }
 
-        void OnCollisionEnter2D(Collision2D collision) {
+        private void OnCollisionEnter2D(Collision2D collision) {
             print(collision);
         }
     }

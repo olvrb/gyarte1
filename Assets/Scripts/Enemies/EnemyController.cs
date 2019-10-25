@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Assets.Scripts;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
     private GameObject player;
+
     public void SetPlayer(GameObject player) {
         this.player = player;
     }
 
     // Start is called before the first frame update
-    void Start() {
+    private void Start() {
         GetComponent<SpriteRenderer>().flipX = true;
     }
 
     // Update is called once per frame
-    void Update() {
+    private void Update() {
         MoveTowards();
     }
 
@@ -29,6 +26,4 @@ public class EnemyController : MonoBehaviour {
         // Move towards player
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1 * Time.deltaTime);
     }
-
-    
 }

@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Assets.Scripts.Elements
-{
-    class Lightning : BaseElement
-    {
+namespace Assets.Scripts.Elements {
+    internal class Lightning : BaseElement {
+        public Lightning() => Name = "Lightning";
         public override string Name { get; set; }
         public override AudioClip SoundEffect { get; set; }
         public override Sprite CastSprite { get; set; }
-        public Lightning() => Name = "Lightning";
     }
 }
