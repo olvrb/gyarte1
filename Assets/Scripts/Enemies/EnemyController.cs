@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
@@ -17,7 +18,6 @@ public class EnemyController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         MoveTowards();
-        float NaN = Single.NaN;
     }
 
     private void MoveTowards() {
@@ -29,4 +29,6 @@ public class EnemyController : MonoBehaviour {
         // Move towards player
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1 * Time.deltaTime);
     }
+
+    
 }

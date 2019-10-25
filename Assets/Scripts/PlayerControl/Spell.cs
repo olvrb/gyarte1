@@ -43,8 +43,8 @@ namespace Assets.Scripts
             return this;
         }
 
-        public GameObject GenerateSpellObject(SpriteAtlas spriteAtlas)
-        {
+        public GameObject GenerateSpellObject(SpriteAtlas spriteAtlas) {
+            return null;
             GameObject obj = new GameObject();
 
             obj = SetShapeSprite(obj, spriteAtlas);
