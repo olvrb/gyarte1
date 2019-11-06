@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Random = System.Random;
 
 public class EnemyGenerator : MonoBehaviour {
@@ -8,12 +10,17 @@ public class EnemyGenerator : MonoBehaviour {
     [SerializeField] private Sprite EnemySprite;
     [SerializeField] private PhysicsMaterial2D Material;
     [SerializeField] private GameObject player;
-    [SerializeField] private GameObject Template;
+    private GameObject[] Templates;
 
-    // Start is called before the first frame update
+    private static readonly Random Rand = new Random();
+    private GameObject RandomTemplate => Templates[Rand.Next(0, Templates.Length)];
+    
+
     private void Start() {
+        // Load all enemies from the directory.
+        Templates = Resources.LoadAll<GameObject>("Prefabs/Enemies");
         for (int i = 0; i < numberOfEnemies; i++) {
-            GameObject obj = Instantiate(Template, RandomCoordinate(), Quaternion.identity);
+            GameObject obj = Instantiate(RandomTemplate, RandomCoordinate(), Quaternion.identity);
             obj.GetComponent<EnemyController>().SetPlayer(player);
         }
     }
