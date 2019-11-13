@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1914708781349573914}
   - component: {fileID: 2092551404277942053}
-  - component: {fileID: 2092551404277942055}
   - component: {fileID: 2092551404277942056}
   - component: {fileID: 5398071955985302507}
+  - component: {fileID: 7087598126631740161}
   m_Layer: 0
   m_Name: RobotEnemy
   m_TagString: Untagged
@@ -88,18 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2092551404277942055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2092551404277942051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fafba7644c5ad0438a883a1c17b995b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2092551404277942056
 Rigidbody2D:
   serializedVersion: 4
@@ -182,3 +170,15 @@ PolygonCollider2D:
       - {x: 4.35, y: -2.5049999}
       - {x: 4.44, y: -2.365}
       - {x: 4.44, y: -1.3249999}
+--- !u!114 &7087598126631740161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092551404277942051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60329f9bc4521a74bbab37b86695d8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

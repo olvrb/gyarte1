@@ -3,13 +3,12 @@ using Assets.Scripts.Elements;
 using UnityEngine;
 using Random = System.Random;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : Character {
     private Rigidbody2D body;
 
     [SerializeField] private float rotationSpeed;
 
     [SerializeField] private float speed;
-
     public Spell Spell;
 
     private readonly float ySpellDifference = 1f;
@@ -21,21 +20,25 @@ public class PlayerController : MonoBehaviour {
     public Vector3 SpellSlot => new Vector3(transform.position.x, transform.position.y) + transform.forward * 100;
 
     private void Awake() {
-        SetRandomSprite();
     }
 
     private void SetRandomSprite() {
         Sprite[] sprites = Resources.LoadAll<Sprite>("Character/PlayerSprites");
-        GetComponent<SpriteRenderer>().sprite = sprites[new Random().Next(1, sprites.Length)];
+        SpriteRenderer.sprite = sprites[new Random().Next(1, sprites.Length)];
     }
 
     // Start is called before the first frame update
-    private void Start() {
+    protected override void Start() {
+        base.Start();
         body = GetComponent<Rigidbody2D>();
+        SetRandomSprite();
+        MaxHp = 20;
+        Hp = MaxHp;
     }
 
     // Update is called once per frame
-    private void Update() {
+    protected override void Update() {
+        base.Update();
         CreateSpell();
         RotateObject();
         MoveObject();
@@ -76,8 +79,8 @@ public class PlayerController : MonoBehaviour {
         Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         diff.Normalize();
 
-        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rot_z - 90),
+        float rotZ = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotZ - 90),
             rotationSpeed * Time.deltaTime);
     }
 }

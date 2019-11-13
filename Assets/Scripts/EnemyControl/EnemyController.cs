@@ -1,21 +1,30 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts;
+using UnityEngine;
 
-public class EnemyController : MonoBehaviour {
+public class EnemyController : Character {
     private GameObject player;
+
+
+
 
     public void SetPlayer(GameObject player) {
         this.player = player;
     }
 
     // Start is called before the first frame update
-    private void Start() {
-        GetComponent<SpriteRenderer>().flipX = true;
+    protected override void Start() {
+        base.Start();
+        SpriteRenderer.flipX = true;
+        MaxHp = 10;
+        Hp = MaxHp;
     }
 
     // Update is called once per frame
-    private void Update() {
+    protected override void Update() {
+        base.Update();
         MoveTowards();
     }
+
 
     private void MoveTowards() {
         // Change rotation
