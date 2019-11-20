@@ -5,8 +5,6 @@ public class EnemyController : Character {
     private GameObject player;
 
 
-
-
     public void SetPlayer(GameObject player) {
         this.player = player;
     }

@@ -14,6 +14,12 @@ namespace Assets.Scripts
             if (IsAlive) Hp -= amount;
         }
 
+        public void Heal(uint amount) {
+            if (Hp + amount > MaxHp) Hp = MaxHp;
+
+            Hp += (int)amount;
+        }
+
         protected virtual void Start() {
             SpriteRenderer = GetComponent<SpriteRenderer>();
         }

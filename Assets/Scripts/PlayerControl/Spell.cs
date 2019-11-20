@@ -53,11 +53,23 @@ namespace Assets.Scripts {
             return this;
         }
 
+        
+
         public GameObject GenerateSpellObject(SpriteAtlas spriteAtlas) {
-            return null;
+            // return null;
+
             GameObject obj = new GameObject();
 
             obj = SetShapeSprite(obj, spriteAtlas);
+
+            PolygonCollider2D coll = obj.AddComponent<PolygonCollider2D>();
+
+            Rigidbody2D rigidbody2D = obj.AddComponent<Rigidbody2D>();
+            rigidbody2D.sharedMaterial = Resources.Load<PhysicsMaterial2D>("Materials/default");
+            rigidbody2D.sleepMode = RigidbodySleepMode2D.NeverSleep;
+            rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            
+            Physics2D.IgnoreCollision(coll, player.GetComponent<BoxCollider2D>());
 
             SpellCastController cont = obj.AddComponent<SpellCastController>();
             cont.SetPlayer(player);
@@ -67,17 +79,16 @@ namespace Assets.Scripts {
 
         public GameObject SetShapeSprite(GameObject obj, SpriteAtlas spriteAtlas) {
             SpriteRenderer renderer = obj.AddComponent<SpriteRenderer>();
+            Sprite rendererSprite = spriteAtlas.GetSprite("spellhitbox_40");
+            MonoBehaviour.print(rendererSprite);
             if (Shape is Fire) {
-                renderer.sprite = spriteAtlas.GetSprite("spellhitbox_45");
+                renderer.sprite = rendererSprite;
             }
             else if (Shape is Lightning) {
-                spriteAtlas.GetSprite("spellhitbox_45");
             }
             else if (Shape is Laser) {
-                spriteAtlas.GetSprite("spellhitbox_45");
             }
             else if (Shape is Explosive) {
-                spriteAtlas.GetSprite("spellhitbox_45");
             }
 
             return obj;
