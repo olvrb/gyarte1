@@ -22,7 +22,8 @@ namespace Assets.Scripts.SpellCast {
         }
 
         private void Update() {
-            transform.position = 0.1f * transform.right + transform.position;
+            transform.position = 0.1f * player.transform.up + transform.position;
+
         }
 
         private void MoveToPlayer() {
