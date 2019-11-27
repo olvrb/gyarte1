@@ -72,8 +72,15 @@ namespace Assets.Scripts {
             
             Physics2D.IgnoreCollision(coll, player.GetComponent<BoxCollider2D>());
 
-            SpellCastController cont = obj.AddComponent<SpellCastController>();
-            cont.SetPlayer(player);
+            if (Shape is Fire) {
+                FireSpellCastController cont = obj.AddComponent<FireSpellCastController>();
+                cont.SetPlayer(player);
+            }
+            else if (Shape is Explosive) {
+                ExplosiveSpellCastController cont = obj.AddComponent<ExplosiveSpellCastController>();
+                cont.SetPlayer(player);
+            }
+
 
             return obj;
         }
@@ -90,6 +97,7 @@ namespace Assets.Scripts {
             else if (Shape is Laser) {
             }
             else if (Shape is Explosive) {
+                renderer.sprite = spriteAtlas.GetSprite("spellhitbox_26");
             }
 
             return obj;

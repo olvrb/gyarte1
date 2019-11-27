@@ -42,16 +42,16 @@ SpriteAtlas:
       enableTightPacking: 1
     variantMultiplier: 1
     packables:
-    - {fileID: 5089114050037072217, guid: 459d3304331751b40ad627dfffe95807, type: 3}
     - {fileID: 8862610818371622361, guid: 459d3304331751b40ad627dfffe95807, type: 3}
-    totalSpriteSurfaceArea: 412408
+    - {fileID: -4836270822345314500, guid: 459d3304331751b40ad627dfffe95807, type: 3}
+    totalSpriteSurfaceArea: 226122
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 8862610818371622361, guid: 459d3304331751b40ad627dfffe95807, type: 3}
-  - {fileID: 5089114050037072217, guid: 459d3304331751b40ad627dfffe95807, type: 3}
+  - {fileID: -4836270822345314500, guid: 459d3304331751b40ad627dfffe95807, type: 3}
   m_PackedSpriteNamesToIndex:
   - spellhitbox_40
-  - spellhitbox_45
+  - spellhitbox_26
   m_Tag: SpellHitbox
   m_IsVariant: 0

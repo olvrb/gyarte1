@@ -14,6 +14,10 @@ namespace Assets.Scripts
             if (IsAlive) Hp -= amount;
         }
 
+        public void Kill() {
+            Hp = 0;
+        }
+
         public void Heal(uint amount) {
             if (Hp + amount > MaxHp) Hp = MaxHp;
 

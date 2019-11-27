@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts.SpellCast {
-    internal class SpellCastController : MonoBehaviour {
+    internal class FireSpellCastController : MonoBehaviour {
         private GameObject player;
         private PlayerController playerController;
         private Rigidbody2D rigidbody2D;
@@ -22,7 +22,7 @@ namespace Assets.Scripts.SpellCast {
         }
 
         private void Update() {
-            transform.position = 0.1f * player.transform.up + transform.position;
+            transform.position = 0.05f * player.transform.up + transform.position;
 
         }
 
