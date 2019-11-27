@@ -6,10 +6,14 @@ namespace Assets.Scripts.SpellCast {
     internal class SpellCastController : MonoBehaviour {
         private GameObject player;
         private PlayerController playerController;
+        private Rigidbody2D rigidbody2D;
 
         public void SetPlayer(GameObject player) {
             this.player = player;
             playerController = player.GetComponent<PlayerController>();
+
+            rigidbody2D = GetComponent<Rigidbody2D>();
+
         }
 
         private void Start() {
@@ -18,15 +22,16 @@ namespace Assets.Scripts.SpellCast {
         }
 
         private void Update() {
+            transform.position = 0.1f * transform.right + transform.position;
         }
 
         private void MoveToPlayer() {
-            transform.position = playerController.SpellSlot;
+            transform.position = player.transform.position; 
 
             float rotationZ = player.transform.localEulerAngles.z + 70;
 
             transform.rotation =
-                Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, rotationZ), 100000 * Time.deltaTime);
+                Quaternion.Euler(0, 0, rotationZ);
 
         }
 

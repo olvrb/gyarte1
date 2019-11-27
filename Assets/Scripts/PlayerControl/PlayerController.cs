@@ -17,7 +17,7 @@ public class PlayerController : Character {
     public Vector3 Slot2 => new Vector3(transform.position.x, transform.position.y - ySpellDifference);
     public Vector3 Slot3 => new Vector3(transform.position.x + 0.5f, transform.position.y - ySpellDifference);
 
-    public Vector3 SpellSlot => new Vector3(transform.position.x, transform.position.y) + transform.forward * 100;
+    public Vector3 SpellSlot => new Vector3(transform.position.x, transform.position.y) + body.transform.forward * 800;
 
     private void Awake() {
     }

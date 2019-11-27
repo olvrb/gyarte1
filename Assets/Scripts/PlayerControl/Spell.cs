@@ -68,6 +68,7 @@ namespace Assets.Scripts {
             rigidbody2D.sharedMaterial = Resources.Load<PhysicsMaterial2D>("Materials/default");
             rigidbody2D.sleepMode = RigidbodySleepMode2D.NeverSleep;
             rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            rigidbody2D.isKinematic = false;
             
             Physics2D.IgnoreCollision(coll, player.GetComponent<BoxCollider2D>());
 
