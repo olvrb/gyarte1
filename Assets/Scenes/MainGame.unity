@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0949060771e1609468f844564332d309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   rotationSpeed: 1000
+  speed: 5
 --- !u!50 &401966037
 Rigidbody2D:
   serializedVersion: 4
@@ -523,10 +523,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2562693ceaf93d408b7cac9c5a7461d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fire: {fileID: 21300000, guid: 2ad5bd4f2312d434dbab4bd5aa43fc51, type: 3}
-  Lightning: {fileID: 21300000, guid: 28087a4ef28d4f04d97301484ef4b1c9, type: 3}
-  Laser: {fileID: 21300000, guid: e65244f93491dbe43b9539dd1649c970, type: 3}
-  Explosive: {fileID: 21300000, guid: f7836a5b019366244a702b860d6fe50d, type: 3}
+  Explosive: {fileID: 5106542400426266138, guid: 459d3304331751b40ad627dfffe95807,
+    type: 3}
+  Fire: {fileID: -4356511387460161974, guid: 459d3304331751b40ad627dfffe95807, type: 3}
+  Laser: {fileID: 2933717744436040432, guid: 459d3304331751b40ad627dfffe95807, type: 3}
+  Lightning: {fileID: 2322792501359584760, guid: 459d3304331751b40ad627dfffe95807,
+    type: 3}
 --- !u!114 &401966040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,12 +887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd1ff0d0ad366b488b74e0c325b2f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySprite: {fileID: 21300000, guid: 145a4b032ff2343429f889a68bac56c4, type: 3}
   Constraint: {fileID: 747810042}
-  player: {fileID: 401966033}
+  EnemySprite: {fileID: 21300000, guid: 145a4b032ff2343429f889a68bac56c4, type: 3}
   Material: {fileID: 6200000, guid: 0d0bf0720fb59474b9788434bf0594b3, type: 2}
-  Template: {fileID: 2092551404277942051, guid: 0e35a501d6856ea43bea3406914e6619,
-    type: 3}
+  player: {fileID: 401966033}
 --- !u!1 &1037692964
 GameObject:
   m_ObjectHideFlags: 0

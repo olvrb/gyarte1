@@ -19,6 +19,7 @@ namespace Assets.Scripts.Elements {
         }
 
         private void Start() {
+            this.transform.localScale = new Vector3(0.5f, 0.5f);
             player = GameObject.Find("player");
             playerController = player.GetComponent<PlayerController>();
 
