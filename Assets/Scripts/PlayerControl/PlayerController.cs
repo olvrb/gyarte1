@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts;
 using Assets.Scripts.Elements;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = System.Random;
 
 public class PlayerController : Character {
@@ -82,5 +83,11 @@ public class PlayerController : Character {
         float rotZ = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, rotZ - 90),
             rotationSpeed * Time.deltaTime);
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+        print("gameover");
     }
 }

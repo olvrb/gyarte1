@@ -24,9 +24,17 @@ public class ExplosiveSpellCastController : MonoBehaviour
         StartCoroutine(FadeTo(0, 1));
     }
 
+    bool isFirstUpdate = true;
     private void Update()
     {
-        transform.position = 0.5f * player.transform.up + transform.position;
+        const float v = 0.5f;
+
+        if (isFirstUpdate)
+        {
+            transform.position += v * this.player.transform.up;
+            isFirstUpdate = false;
+        }
+        else transform.position += v * transform.right;
 
     }
 

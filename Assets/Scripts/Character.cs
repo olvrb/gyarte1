@@ -29,7 +29,7 @@ namespace Assets.Scripts
         }
         protected virtual void Update()
         {
-            if (!IsAlive) Destroy(this.gameObject);
+            if (!IsAlive) this.gameObject.SendMessage("GameOver", SendMessageOptions.DontRequireReceiver);
             Color rend = SpriteRenderer.color;
             rend.a = (float)Hp / (float)MaxHp;
             SpriteRenderer.color = rend;

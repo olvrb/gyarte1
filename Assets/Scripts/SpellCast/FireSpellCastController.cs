@@ -7,10 +7,12 @@ namespace Assets.Scripts.SpellCast {
         private GameObject player;
         private PlayerController playerController;
         private Rigidbody2D rigidbody2D;
+        private Spell spell;
 
         public void SetPlayer(GameObject player) {
             this.player = player;
             playerController = player.GetComponent<PlayerController>();
+            spell = playerController.Spell;
 
             rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -36,11 +38,19 @@ namespace Assets.Scripts.SpellCast {
 
         }
 
+        private bool shouldDealDamage = true;
         void OnCollisionStay2D(Collision2D other) {
-            if (other.gameObject.name.Contains("Enemy")) {
+            if (other.gameObject.name.Contains("Enemy") && shouldDealDamage) {
                 Character controller = other.gameObject.GetComponent<Character>();
-                controller.ReceiveDamage(1);
+                if (other.gameObject.GetComponent<ZombieController>() != null)
+                {
+                    controller.ReceiveDamage(2);
+                }
+                else controller.ReceiveDamage(1);
+
             }
+
+            shouldDealDamage = !shouldDealDamage;
         }
 
         private IEnumerator FadeTo(float aValue, float aTime)
