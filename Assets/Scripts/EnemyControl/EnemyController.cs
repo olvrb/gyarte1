@@ -23,6 +23,19 @@ public class EnemyController : Character {
         MoveTowards();
     }
 
+    public void GameOver() {
+        Destroy(gameObject);
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        GameObject collider = other.gameObject;
+        if (collider.name == "player")
+        {
+            PlayerController cont = collider.GetComponent<PlayerController>();
+            cont.ReceiveDamage(1);
+        }
+    }
 
     private void MoveTowards() {
         // Change rotation

@@ -15,4 +15,9 @@ public class RobotController : EnemyController
     {
         base.Update();
     }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        base.OnCollisionEnter2D(other);
+    }
 }

@@ -28,9 +28,11 @@ public class SpellController : MonoBehaviour {
 
     // Update is called once per frame
     private void Update() {
-        if (Input.GetKeyUp(KeyCode.Space)) {
-            Shoot();
-        }
+        Shoot();
+
+        // if (Input.GetKeyUp(KeyCode.Space)) {
+        //     Shoot();
+        // }
     }
 
     private void Shoot() {

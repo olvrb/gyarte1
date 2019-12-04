@@ -16,11 +16,7 @@ public class HandController : EnemyController
         base.Update();
     }
 
-    void OnCollisionEnter2D(Collision2D other) {
-        GameObject collider = other.gameObject;
-        if (collider.name == "player") {
-            PlayerController cont = collider.GetComponent<PlayerController>();
-            cont.ReceiveDamage(1);
-        }
+    public void OnCollisionEnter2D(Collision2D other) {
+        base.OnCollisionEnter2D(other);
     }
 }

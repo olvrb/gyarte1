@@ -32,7 +32,7 @@ public class PlayerController : Character {
     protected override void Start() {
         base.Start();
         body = GetComponent<Rigidbody2D>();
-        SetRandomSprite();
+        // SetRandomSprite();
         MaxHp = 20;
         Hp = MaxHp;
     }
